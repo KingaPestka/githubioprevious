@@ -15,17 +15,39 @@
     <link rel="stylesheet" href="./css/buttons.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 
+    <script>
+
+        function ValidateForm()
+        {
+            var x = document.forms["helloform"]["name"].value;
+
+            if(x=="")
+            {
+                alert("I need to know your name");
+                return false;
+            }
+            else
+            {
+                alert("Hello there " + document.forms["helloform"]["name"].value);
+            }
+        }
+
+    </script>
 </head>
 
 <body>
 
 <form action="https://KingaPestka.github.io/gameloop/" method="GET" target="_blank">
 
-<input type="text" name="username" value="Enter Username">
+
+<form name="helloform" action="." onsubmit="return ValidateForm()" method="get">
+    Username: <input type="text" name="name">
 
 
+    <input type="submit" value="Submit">
+</form>
 
-<button type="submit">Log in</button>
+
 
 </body>
 

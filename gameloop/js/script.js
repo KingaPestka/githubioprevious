@@ -18,7 +18,7 @@ function splitFunction() {
   }
 splitFunction();
 var string1 = "username: ";
-var string2 = username;
+var string2 = gamerTag;
 var username = string1.concat(string2);
 context.font="30 px Arial";
 
