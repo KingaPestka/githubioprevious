@@ -7,9 +7,15 @@ var canvas = document.getElementById("game");
 
 var context = canvas.getContext("2d");
 
-        
+ 
 
 
+function splitFunction() {
+    var pageURL=document.location.href;
+    var splitURL=pageURL.split("=");
+    alert(result[1]);
+    alert(result[2]);
+  }
         
 
 var image = new Image();
