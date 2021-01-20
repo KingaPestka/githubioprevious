@@ -14,7 +14,7 @@ var gamerTag;
 function splitFunction() {
     
     var result = url.split("=");
-    username = result[1];
+    gamerTag = result[1];
   }
 splitFunction();
 var string1 = "username: ";
