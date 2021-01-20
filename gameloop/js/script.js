@@ -9,12 +9,12 @@ var context = canvas.getContext("2d");
 
  
 var pageURL=document.location.href;
-var username;
+var gamerTag;
 
 function splitFunction() {
     
     var result = url.split("=");
-    username = result[1];
+    username = result[0];
   }
 splitFunction();
 var string1 = "username: ";
