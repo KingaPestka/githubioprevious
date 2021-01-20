@@ -28,8 +28,8 @@
     
     <script>
     function splitFunction() {
-      var str = "GamerTag";
-      var result = str.split("type, name, value"); // Splits string based on =
+      var url = document.location.href;
+      var result = str.split("="); // Splits string based on =
       alert(result[0]);
       alert(result[1]);
     }
