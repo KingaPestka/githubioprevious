@@ -8,14 +8,20 @@ var canvas = document.getElementById("game");
 var context = canvas.getContext("2d");
 
  
+var pageURL=document.location.href;
+var username;
 
-
-function splitFunction(pageURL) {
-    var pageURL=document.location.href;
-    var splitURL=pageURL.split("=");
-    alert(result[1]);
-    alert(result[2]);
+function splitFunction() {
+    
+    var result = url.split("=");
+    username = result[1];
   }
+splitFunction();
+var string1 = "username: ";
+var string2 = username;
+var username = string1.concat(string2);
+context.font="30 px Arial";
+
         
 
 var image = new Image();
@@ -123,6 +129,7 @@ function draw() {
    
     
     animate();
+    context.fillText(username,700,20);
 }
 var frames = 6;
 
