@@ -8,15 +8,14 @@ var canvas = document.getElementById("game");
 var context = canvas.getContext("2d");
 
         
- function onPageLoad(){
-     var href = window.location.href;
 
- }           
+
+        
 
 var image = new Image();
-image.src = "./spritestickmen.png";
+image.src = "./jpg/spritestickmen.png";
 var npcimage= new Image();
-npcimage.src="./ghost.png";
+npcimage.src="./jpg/ghost.png";
 function GameObject(name, img, health) {
     this.name = name;
     this.img = img;
@@ -35,9 +34,9 @@ function GamerInput(input) {
 var gamerInput = new GamerInput("None"); 
 
 // Gameobjects is a collection of the Actors within the game
-var player = new GameObject("Player", "./spritestickmen.png", 100);
+var player = new GameObject("Player", "./jpg/spritestickmen.png", 100);
 
-var gameobjects = [player, new GameObject("npc", "./ghost.png", 100)];
+var gameobjects = [player, new GameObject("npc", "./jpg/ghost.png", 100)];
 gameobjects[1].x=400;
 gameobjects[1].y=400;
 // Process keyboard input event
@@ -126,7 +125,7 @@ var currentFrame = 0;
 
 
 var sprite = new Image();
-sprite.src = "./spritestickmen.png";
+sprite.src = "./jpg/spritestickmen.png";
 
 
 
