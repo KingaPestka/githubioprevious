@@ -13,7 +13,7 @@ var gamerTag;
 
 function splitFunction() {
     
-    var result = url.split("=");
+    var result = pageURL.split("=");
     gamerTag = result[1];
   }
 splitFunction();
