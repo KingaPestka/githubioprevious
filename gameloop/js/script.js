@@ -10,7 +10,7 @@ var context = canvas.getContext("2d");
  
 
 
-function splitFunction() {
+function splitFunction(input) {
     var pageURL=document.location.href;
     var splitURL=pageURL.split("=");
     alert(result[1]);
